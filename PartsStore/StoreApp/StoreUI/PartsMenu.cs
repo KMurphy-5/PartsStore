@@ -1,4 +1,4 @@
-
+using StoreModels;
 using System;
 namespace StoreUI
 {
@@ -6,7 +6,12 @@ namespace StoreUI
     {
         public void Start()
         {
-           Console.WriteLine("This is the Main Menu");
+            Customer newCustomer = new Customer();
+            Console.WriteLine("This is the Main Menu");
+            Console.WriteLine("what is your name");
+            newCustomer.Name=Console.ReadLine();
+            Console.WriteLine($"Welcome {newCustomer.Name}");
+
         }
     }
 }
