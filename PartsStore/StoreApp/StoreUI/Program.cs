@@ -6,7 +6,8 @@ namespace StoreUI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            IMenu menu = new PartsMenu();
+            menu.Start();
         }
     }
 }
